@@ -1,5 +1,11 @@
 {
   "devDependencies": {
+    "concurrently": "^8.2.2",
     "elm-watch": "^1.1.2"
+  },
+  "scripts": {
+    "start": "concurrently \"npm:process1\" \"npm:process2\"",
+    "process1": "npx elm-watch hot",
+    "process2": "npx http-server"
   }
 }
