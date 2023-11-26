@@ -4,3 +4,5 @@ elm-stuff
 repl-temp-*
 # node
 node_modules
+# elm-watch generated files
+build/main.js
